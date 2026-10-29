@@ -1,0 +1,54 @@
+:root {
+  font-family: 'Manrope', 'Trebuchet MS', sans-serif;
+  color: #17352e;
+  background: #f4f6f1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+
+  --ink: #17352e;
+  --muted: #77867e;
+  --line: #dfe5dd;
+  --paper: #f4f6f1;
+  --white: #ffffff;
+  --green: #1d5b48;
+  --mint: #d9ebd7;
+  --coral: #e77e64;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  background: var(--paper);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #e7a18d;
+  outline-offset: 3px;
+}
