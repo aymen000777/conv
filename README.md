@@ -25,7 +25,3 @@ npm run build
 - Adapter la carte aux petits écrans.
 
 Le résultat se met aussi à jour quand le montant ou l’une des devises change.
-
-## Quiz en images
-
-Le quiz Vue existant reste accessible séparément à l’adresse `/quiz.html`. Ses questions et illustrations se trouvent dans `src/quiz/App.vue` et `public/images`.

@@ -8,10 +8,7 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     rolldownOptions: {
-      input: {
-        imc: fileURLToPath(new URL('./index.html', import.meta.url)),
-        quiz: fileURLToPath(new URL('./quiz.html', import.meta.url)),
-      },
+      input: fileURLToPath(new URL('./index.html', import.meta.url)),
     },
   },
   resolve: {
