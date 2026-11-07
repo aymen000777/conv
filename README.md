@@ -1,27 +1,37 @@
-# Currency Converter
+# Gestion des ordinateurs
 
-Convertisseur de devises réalisé avec Vue 3 et Vite. La page principale propose six devises, des taux fixes exprimés pour un euro, un clavier numérique et la conversion automatique du montant saisi.
+Application Vue.js 3 de gestion d’un parc informatique. Elle permet de consulter les ordinateurs, les ajouter, les modifier et les supprimer avec un stockage LocalStorage.
 
-## Installation et lancement
+## Installation
 
-```sh
+```bash
 npm install
+```
+
+## Lancement
+
+```bash
 npm run dev
 ```
 
-Pour vérifier les types et construire le projet :
+## Construction
 
-```sh
+```bash
 npm run build
 ```
 
 ## Fonctionnalités
 
-- Choisir une devise source et une devise cible parmi USD, EUR, TND, GBP, JPY et CAD.
-- Convertir avec les taux fixes définis dans `src/data/taux.ts`.
-- Saisir un montant avec le clavier de la page ou le clavier physique.
-- Inverser les devises, effacer la saisie avec « C » et afficher le résultat arrondi à deux décimales.
-- Afficher une erreur si le montant est nul, limiter la saisie à dix caractères et ignorer les points décimaux supplémentaires.
-- Adapter la carte aux petits écrans.
+- Liste des ordinateurs sous forme de cartes.
+- Ajout et modification via la même vue de formulaire.
+- Suppression avec confirmation `confirm()`.
+- Validation des champs obligatoires et des valeurs strictement positives.
+- Recherche par modèle ou processeur.
+- Tri par mémoire ou alphabetique.
+- Persistance des données dans `localStorage`.
 
-Le résultat se met aussi à jour quand le montant ou l’une des devises change.
+## Routes
+
+- `/ordinateurs` : liste des ordinateurs
+- `/ordinateurs/ajouter` : ajout
+- `/ordinateurs/modifier/:id` : modification
